@@ -1,1 +1,160 @@
-Hello World
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audiomay</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS Files comes here -->
+    <link href="bootstrap.css" rel="stylesheet" media="screen">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link href="animate.css" rel="stylesheet" media="screen">
+    <link href="owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="owl.theme.css" rel="stylesheet" media="screen">
+    <link href="nivo-lightbox.css" rel="stylesheet" media="screen">
+    <link href="default.css" rel="stylesheet" media="screen">
+    <link href="green.css" rel="stylesheet" media="screen">
+    <link href="responsive.css" rel="stylesheet" media="screen">
+    
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
+    
+    <!-- Modernizer and IE specyfic files -->  
+    <script src="modernizr.custom.js"></script>
+      
+
+
+
+    
+  </head>
+  
+
+  <body>
+
+    <!--###############################-->
+    <!--PRELOADER #####################-->
+    <!--###############################-->
+    
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--###############################-->
+    <!--HOME ##########################-->
+    <!--###############################-->
+
+    <section id="home">
+    <div class="container">
+        <div class="row">
+            <div id="homescreen" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                 <div id="logo"><a href="#home"><img src="logo.png" alt="logo"></a></div>
+                 
+                 <div id="slogan"><h1>Audiomay App lets you search and download your favorite music for FREE</h1></div>
+                 
+                 <a href="audiomay.apk" class="cta2" id="button_download">Download Now</a>
+                 <img src="homescreen.png" class="img-responsive" id="home_image" alt="img">
+                
+            </div> 
+        </div>
+    </div>
+    </section>
+    
+    
+    
+                
+              <section id="gallery">
+        <div class="container">
+            <div class="row" id="gallery_intro">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+                    
+                    <h2>Screenshots Gallery</h2>
+                   
+                </div>
+            </div>
+            
+            <div class="row" id="gallery_carousel">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+                    <div id="owl-gallery" class="owl-carousel">
+                        <div class="item"><a href="s1.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="gallery1@2x.jpg"><img src="s2.png" class="img-responsive img-rounded" alt="img"></a></div>
+                        <div class="item"><a href="s2.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="gallery1@2x.jpg"><img src="s2.png" class="img-responsive img-rounded" alt="img"></a></div>
+                        <div class="item"><a href="s3.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="gallery1@2x.jpg"><img src="s3.png" class="img-responsive img-rounded" alt="img"></a></div>
+                        <div class="item"><a href="s4.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="gallery1@2x.jpg"><img src="s4.png" class="img-responsive img-rounded" alt="img"></a></div>
+                        <div class="item"><a href="s5.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="gallery1@2x.jpg"><img src="s5.png" class="img-responsive img-rounded" alt="img"></a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="audiomay.apk" class="cta2" id="button_download">Download Now</a>
+            
+        </div>
+    </section>
+                
+
+                
+           
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <!-- JavaScript plugins comes here -->
+    <script src="jquery-2.0.3.min.js"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="jquery.scrollTo.js"></script>
+    <script src="jquery.form.js"></script>
+    <script src="main.js"></script>
+    <script src="retina.js"></script>
+    <script src="waypoints.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="nivo-lightbox.min.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function(){
+                $('#subscribe-form').ajaxForm( {
+                target: '#preview',
+                success: function() { 
+                      $('#subscribe-form').slideUp('slow');
+                      $('#preview').css({"opacity":"1"});
+                    }
+                });
+            });
+    </script>
+    <script>
+        var url ='icons.svg';
+        var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+        document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+
+
+
+ <!--###############################-->
+    <!--Newsletter and Footer #########-->
+    <!--###############################-->
+    
+    <section id="footer">
+        <div class="container">
+           
+                   
+                   <p>Copyright &copy; 2017 Audiomay</p>
+     
+               </div>
+           </div>
+           
+        </div>
+    </section>
+    
+
+
+
+
+  </body>
+</html>
